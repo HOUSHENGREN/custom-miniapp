@@ -1,0 +1,18 @@
+{
+  "miniprogramRoot": "miniprogram",
+  "cloudfunctionRoot": "functions",
+  "compileType": "miniprogram",
+  "setting": {
+    "newFeature": true,
+    "urlCheck": true,
+    "es6": false,
+    "postcss": true,
+    "minified": false,
+    "checkSiteMap": false,
+    "autoAudits": false
+  },
+  "appid": "wxe985e17305905fa5",
+  "projectname": "custom-miniapp",
+  "description": "just for study",
+  "condition": {}
+}
