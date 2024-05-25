@@ -6,7 +6,7 @@
     "serve": "mpx-cli-service serve",
     "build": "mpx-cli-service build",
     "upload": "node ./upload.js",
-    "release": "sh ./release.sh",
+    "release": "sh ./release-win.sh",
     "get:version:mac": "echo $npm_package_version",
     "get:version:win": "echo %npm_package_version%",
     "release:override": "sh ./release-win.sh -o",
