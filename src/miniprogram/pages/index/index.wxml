@@ -2,7 +2,10 @@
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
     <view class="test" hover-class="none" hover-stop-propagation="false">
-      小程序开发学习记录 test override
+      小程序开发学习记录 todoList
+
+      1. 引入mpx
+      2. 利用miniprogram-ci实现脚本上传、构建
     </view>
   </view>
 </scroll-view>
