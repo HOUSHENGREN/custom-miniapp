@@ -9,13 +9,8 @@ git pull origin master
 if [ -z "$1" ];
 then
 VERSION=`npx select-version-cli` # get version from prompt
-elif [[ "$OSTYPE" == "darwin"* ]]; 
-then
+else
 VERSION=`npm run get:version:mac --silent` # get current version from package.json
-echo "Override version with 'v$VERSION'."
-elif [[ "$OSTYPE" == "win32"* ]];
-then
-VERSION=`npm run get:version:win --silent` # get current version from package.json
 echo "Override version with 'v$VERSION'."
 fi
 
