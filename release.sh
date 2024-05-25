@@ -17,8 +17,9 @@ echo "Override version with 'v$VERSION'."
 
 # elif [[ "$OSTYPE" == "msys"* ]]; then  
     # echo "This is likely Windows using MSYS2"  
-else [[ "$OSTYPE" == "win32"* ]]; then  
-    echo "This is likely Windows using Cygwin"
+else [[ "$OSTYPE" == "win32"* ]];
+then  
+# echo "This is likely Windows using Cygwin"
 VERSION=`npm run get:version:win --silent` # get current version from package.json
 echo "Override version with 'v$VERSION'."
 
