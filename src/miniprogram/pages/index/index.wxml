@@ -2,7 +2,7 @@
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
     <view class="test" hover-class="none" hover-stop-propagation="false">
-      小程序开发学习记录
+      小程序开发学习记录 test override
     </view>
   </view>
 </scroll-view>
