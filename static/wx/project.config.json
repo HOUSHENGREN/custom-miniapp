@@ -1,6 +1,6 @@
 {
-  "miniprogramRoot": "miniprogram",
-  "cloudfunctionRoot": "functions",
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "functions/",
   "compileType": "miniprogram",
   "setting": {
     "newFeature": true,
@@ -9,10 +9,25 @@
     "postcss": true,
     "minified": false,
     "checkSiteMap": false,
-    "autoAudits": false
+    "autoAudits": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
   },
   "appid": "wxe985e17305905fa5",
   "projectname": "custom-miniapp",
   "description": "just for study",
-  "condition": {}
+  "condition": {},
+  "libVersion": "3.4.4",
+  "srcMiniprogramRoot": "miniprogram/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
 }

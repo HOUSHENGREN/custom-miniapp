@@ -1,29 +1,5 @@
-<script lang="ts" src="./app.ts"></script>
+<script src="./app.ts" />
 
-<style>
-  /*此处编写全局样式*/
-</style>
+<style src="./app.wxss" />
 
-<script type="application/json">
-  {
-    "pages": [
-      "./pages/index"
-    ]
-  }
-</script>
-
-<!--也可以通过以下形式用js输出json，便于书写注释和使用条件编译-->
-
-<!--<script name="json">-->
-<!--  module.exports = {-->
-<!--    pages: [-->
-<!--      './pages/index'-->
-<!--    ],-->
-<!--    plugins: {-->
-<!--      'myPlugin': {-->
-<!--        'version': 'dev',-->
-<!--        'provider': 'wxe985e17305905fa5'-->
-<!--      }-->
-<!--    }-->
-<!--  }-->
-<!--</script>-->
+<script type="application/json" src="./app.json" />
