@@ -1,0 +1,11 @@
+<script src="./index.ts" />
+
+<style scoped>
+.container {
+  background: greenyellow;
+}
+</style>
+
+<template>
+  <view>testMpx</view>
+</template>

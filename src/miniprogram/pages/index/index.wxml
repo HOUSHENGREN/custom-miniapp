@@ -1,11 +1,16 @@
 <!--index.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    <view class="test" hover-class="none" hover-stop-propagation="false">
-      小程序开发学习记录 todoList
+<!-- <scroll-view class="scrollarea" scroll-y type="list">
 
-      1. 引入mpx
-      2. 利用miniprogram-ci实现脚本上传、构建
-    </view>
+</scroll-view> -->
+<view class="container">
+  <view class="test">
+    小程序开发学习记录 todoList
+
+    <view>1. 引入mpx</view>
+    <view>2. 利用miniprogram-ci实现脚本上传体验版本、指定版本</view>
+
+    <!-- <button bindtap="toMpxPage">
+      toMpxPage
+    </button> -->
   </view>
-</scroll-view>
+</view>
