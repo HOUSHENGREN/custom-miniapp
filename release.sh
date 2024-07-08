@@ -1,6 +1,11 @@
 #!/usr/bin/env sh
 set -e
 
+# 丢到任意一个 .gitignore 指定的文件里，比如 .vscode。方便任意项目使用
+# cd ../
+# sleep 1
+# pwd
+
 # use master as default
 git checkout master
 # git reset --hard
