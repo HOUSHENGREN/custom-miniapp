@@ -17,6 +17,33 @@ Page({
       url: '/page/testMpx/index'
     })
   },
+  onLoad() {
+    // eslint-disable-next-line no-debugger
+    debugger
+    const a = 5
+    this.fetch(a)
+  },
+  fetch(a) {
+    this.setData({
+      info: {
+        a
+      }
+    })
+    return new Promise((resolve, reject) => {
+      try {
+        setTimeout(() => {
+          if (a === 5) {
+            // eslint-disable-next-line prefer-promise-reject-errors
+            reject('a is 5')
+          } else {
+            resolve(a)
+          }
+        }, 2000)
+      } catch (error) {
+        reject(error)
+      }
+    })
+  },
   // bindViewTap() {
   //   wx.navigateTo({
   //     url: '../logs/logs'
