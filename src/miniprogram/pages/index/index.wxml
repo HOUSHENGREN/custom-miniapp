@@ -7,7 +7,7 @@
     小程序开发学习记录 todoList
 
     <view>1. 引入mpx</view>
-    <view>2. 利用miniprogram-ci实现脚本上传体验版本、指定版本</view>
+    <text>2. 利用miniprogram-ci实现脚本上传体验版本、指定版本</text>
 
     <!-- <button bindtap="toMpxPage">
       toMpxPage
