@@ -13,13 +13,15 @@ Page({
     canIUseNicknameComp: wx.canIUse('input.type.nickname')
   },
   toMpxPage() {
+    // eslint-disable-next-line no-debugger
+    // debugger
     wx.navigateTo({
-      url: '/page/testMpx/index'
+      url: '/pages/testMpx/index'
     })
   },
   onLoad() {
     // eslint-disable-next-line no-debugger
-    debugger
+    // debugger
     const a = 5
     this.fetch(a)
   },

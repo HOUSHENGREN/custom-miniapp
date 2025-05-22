@@ -1,0 +1,132 @@
+<script src="./index.ts" />
+
+<style>
+text {
+  font-family: "PingFang SC", "Hiragino Sans GB", "helvetica", 'Heiti SC';
+  font-size: 28rpx;
+  color: #243233;
+}
+
+text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+text {
+  all: unset;
+}
+.container {
+  background: greenyellow;
+}
+.pop-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.pop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 300rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+.pop-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.pop-content {
+  font-size: 28rpx;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.pop-btns {
+  display: flex;
+  justify-content: center;
+}
+.pop-btn {
+  width: 100rpx;
+  height: 60rpx;
+  text-align: center;
+  font-size: 28rpx;
+  background: #f00;
+}
+.pop-text {
+  color: gray;
+}
+.red {
+  color: red;
+}
+
+/* 在app.wxss或页面的wxss文件中添加 */
+.arrow-right {
+  width: 60rpx;
+  height: 60rpx;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #000;
+  position: fixed;
+  right: 10px;
+  bottom: 50%;
+  transform: translateY(50%);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.arrow-right.show {
+  opacity: 1;
+  animation: bounceArrow 0.5s infinite;
+}
+
+@keyframes bounceArrow {
+  0%, 100% {
+    transform: translateY(50%) translateX(0);
+  }
+  50% {
+    transform: translateY(50%) translateX(-5px);
+  }
+}
+</style>
+
+<template>
+  <view class="container">
+    <view>fdsafd</view>
+
+        
+    <scroll-view id="myScrollView" style="height: 300px;">
+      <!-- 内容 -->
+        <view style="height: 600px; background-color: red;">myScrollView</view>
+    </scroll-view>
+        
+    <!-- 在页面的wxml文件中添加 -->
+    <view class="arrow-right" wx:if="{{ showArrow }}" bindtap="onArrowTap"></view>
+
+    <scroll-view id="myPage" scroll-y="true" bindscroll="scroll" style="height: 100vh;">
+      <view>
+        <view style="height: 600px; background-color: red;">165</view>
+        <view style="height: 600px; background-color: green;">6546516</view>
+        <view style="height: 600px; background-color: blue;">6546516</view>
+      </view>
+    </scroll-view>
+
+    <view wx:if="{{showPop}}" class="pop-mask" hover-class="none" hover-stop-propagation="false">
+      <view class="pop">
+        <view class="pop-title">提示</view>
+        <view class="pop-content">
+          <text wx:for="{{arr}}" wx:key="type" class="pop-text {{item.type === 'num' ? 'red' : ''}}">{{item.text}}</text>
+        </view>
+        <view class="pop-btns">
+          <button class="pop-btn" bindtap="closePop">确定</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

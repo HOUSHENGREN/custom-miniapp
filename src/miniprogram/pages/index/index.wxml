@@ -9,8 +9,8 @@
     <view>1. 引入mpx</view>
     <view>2. 利用miniprogram-ci实现脚本上传体验版本、指定版本</view>
 
-    <!-- <button bindtap="toMpxPage">
+    <button bindtap="toMpxPage">
       toMpxPage
-    </button> -->
+    </button>
   </view>
 </view>

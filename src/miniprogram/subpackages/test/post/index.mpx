@@ -1,0 +1,19 @@
+<template>
+  <view>
+    <!-- 使用 Canvas 2D，通过 type="2d" 声明 -->
+    <canvas 
+      type="2d" 
+      id="posterCanvas" 
+      style="width: 750rpx; height: 1334rpx; position: absolute; top: -9999px;"
+    ></canvas>
+
+    <!-- 预览弹窗 -->
+    <view class="poster-modal" hidden="{{!showPoster}}">
+      <image src="{{posterUrl}}" mode="widthFix" class="poster-image"></image>
+      <button class="save-btn" bindtap="savePoster">保存图片</button>
+    </view>
+  </view>
+</template>
+
+<script src="./index.ts" />
+

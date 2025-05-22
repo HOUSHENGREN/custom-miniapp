@@ -3,6 +3,16 @@
     "./pages/index/index",
     "./pages/logs/logs"
   ],
+  "subpackages":[
+    {
+      "root": "subpackages/test",
+      "name": "test",
+      "pages": [
+        "./post/index",
+        "./testMpx/index"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Weixin",
